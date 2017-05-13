@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://decoder.server.rec" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://decoder.server.rec" xmlns:intf="http://decoder.server.rec" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://decoder.server.rec" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="kayit">
+    <complexType/>
+   </element>
+   <element name="kayitResponse">
+    <complexType/>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="kayitResponse">
+
+      <wsdl:part element="impl:kayitResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="kayitRequest">
+
+      <wsdl:part element="impl:kayit" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="DaoDecoder">
+
+      <wsdl:operation name="kayit">
+
+         <wsdl:input message="impl:kayitRequest" name="kayitRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:kayitResponse" name="kayitResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="DaoDecoderSoapBinding" type="impl:DaoDecoder">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="kayit">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="kayitRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="kayitResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="DaoDecoderService">
+
+      <wsdl:port binding="impl:DaoDecoderSoapBinding" name="DaoDecoder">
+
+         <wsdlsoap:address location="http://localhost:8082/WebServisDeneme/services/DaoDecoder"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

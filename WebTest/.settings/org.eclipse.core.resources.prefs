@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/rec/server/decoder/DaoDecoder.java=UTF-8
+encoding//src/rec/server/decoder/DaoDecoderService.java=UTF-8
+encoding//src/rec/server/decoder/DaoDecoderServiceLocator.java=UTF-8
+encoding//src/rec/server/decoder/DaoDecoderSoapBindingStub.java=UTF-8
+encoding//src/rec/server/dizi/DiziDeneme.java=UTF-8
+encoding//src/rec/server/dizi/DiziDenemeService.java=UTF-8
+encoding//src/rec/server/dizi/DiziDenemeServiceLocator.java=UTF-8
+encoding//src/rec/server/dizi/DiziDenemeSoapBindingStub.java=UTF-8
+encoding//src/rec/server/hesap/Hesapmakinesi.java=UTF-8
+encoding//src/rec/server/hesap/HesapmakinesiService.java=UTF-8
+encoding//src/rec/server/hesap/HesapmakinesiServiceLocator.java=UTF-8
+encoding//src/rec/server/hesap/HesapmakinesiSoapBindingStub.java=UTF-8
